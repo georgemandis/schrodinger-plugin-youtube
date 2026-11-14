@@ -1,0 +1,26 @@
+{
+    "id": "youtube",
+    "name": "YouTube",
+    "version": "0.1.0",
+    "description": "Paste a YouTube link as a titled link, the video's details, its transcript, or an embed",
+    "author": "georgemandis",
+    "type": "script",
+    "platforms": ["macos", "linux", "windows"],
+    "entry": "index.js",
+    "network": ["www.youtube.com"],
+    "modes": [
+        { "id": "link", "label": "Titled link", "default": true },
+        { "id": "details", "label": "Details" },
+        { "id": "transcript", "label": "Transcript" },
+        { "id": "timestamps", "label": "Transcript with times" },
+        { "id": "embed", "label": "Embed code" }
+    ],
+    "config": {
+        "language": {
+            "type": "text",
+            "default": "",
+            "label": "Transcript language",
+            "description": "Language code such as en, es or ja. Leave empty to use your system language, then English, then whatever the video has."
+        }
+    }
+}
